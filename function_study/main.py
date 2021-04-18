@@ -45,6 +45,9 @@ with open('test_json1.json', 'w') as fp:
 print("==========os包使用==========")
 # 创建目录
 os.mkdir('./test1')
-# 
-
+# 查看当前路径
+print(os.getcwd())
+# 改变当前的工作路径
+os.chdir('/home/wzs/Desktop/python_up/Python_study/')
+print(os.getcwd())
 
