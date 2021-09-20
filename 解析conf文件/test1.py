@@ -12,9 +12,9 @@ sections = conf.sections()
 # print(sections) # 是list
 
 #获取某个section下的所有选项或value，等价于 option = conf.options('logoninfo')
-option = conf.options("logging")
+option = conf.options("logoninfo")
 # option = conf.options(conf.sections()[0])
-print(option)
+# print(option)
 # 根据某个sections 下的某个key 获取对应的value
-value = conf.get('logging', 'path')
-# print(value)
+value = conf.get('logoninfo', 'addr')
+print(value)
